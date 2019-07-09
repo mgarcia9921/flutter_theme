@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_theme/widget/navBar/CustomBottomNavigationBar.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_theme/blocs/theme.dart';
 import 'package:flutter_theme/pages/social.dart';
@@ -36,8 +37,9 @@ class _HomeState extends State<Home> {
         title: Text('My App 1'),
       ),
       drawer: buildDrawer(context),
-      body: _children[_currentIndex],
-      bottomNavigationBar: buildBottomNavigationBar(),
+      body: CustomBottomNavigationBar(),
+      //body: _children[_currentIndex],
+     // bottomNavigationBar: buildBottomNavigationBar(),
     );
   }
 
